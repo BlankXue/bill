@@ -1,0 +1,139 @@
+* { box-sizing: border-box; }
+
+html, body { margin: 0; width: 100%; height: 100%; text-align: center; }
+
+h1, h2, h3, h4 { margin: 0; font-weight: normal; color: #ffffff; }
+
+body { color: #000; font: 50px "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif, serif; }
+
+/*遮罩层*/
+.loading-overlay { position: fixed; width: 100%; height: 100%; z-index: 9999; background-color: #ff652b; }
+
+.loading-overlay img { width: 4rem; height: 4rem; margin: auto; position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+
+.say { color: #ffcc96; font-size: 0.250em; position: absolute; bottom: 1rem; width: 6rem; left: -3rem; margin-left: 50%; }
+
+.say b { font-family: "SimHei", serif; font-size: 0.3rem; }
+
+.item { display: none; }
+
+.item1 { background-image: url("/static/images/bill-bg1.png"); background-size: cover; display: block; }
+
+.item1 .tip { color: #ffaf96; font-size: 0.25rem; padding-top: 0.583rem; }
+
+.item1 i { width: 0.250rem; height:0.250rem; background-image: url("/static/images/bill1-icon.png"); display: inline-block;
+    background-size: cover; vertical-align: sub; }
+
+.item1 h1 { font-size: 0.448rem; }
+
+.item1 h3 { font-size: 0.283rem; margin-top: 0.083rem; letter-spacing: 0.017rem; }
+
+.item1 .register, .recharge, .earnings { visibility: hidden; }
+
+.item1 .register { margin-top: 1.667rem; }
+
+.item1 .recharge { margin-top: 0.500rem; }
+
+.item1 .earnings { margin-top: 0.500rem; }
+
+.item2 { background-image: url("/static/images/bill-bg1.png"); background-size: cover; }
+
+.item2 img { max-width: 35%; margin-top: 1.667em; margin-bottom: 1.333rem; }
+
+.item2 h1 { font-size: 0.417rem; letter-spacing: 0.067rem; }
+
+.item2 .btn { font-size: 0.3rem; color: #fff; border: 0.017rem solid #fff; border-radius: 0.150rem; padding: 0.133rem 0.2rem; position: absolute;
+    bottom: 20%; margin-left: 50%; left: -1rem; width: 2rem; }
+
+.item3 { background-image: url("/static/images/bill-bg3.png"); background-size: cover; }
+
+.item3 h3 { color: #ffcc96; font-size: 0.367rem; }
+
+.item3 h1 { font-size: 0.5rem; padding: 0.167rem 0; letter-spacing: 0.050rem; }
+
+.item3 .invests { color: #fff; }
+
+.item3 .invests span { color: #ffcc96; padding: 0 0.083rem; }
+
+.item3 .amount { color: #ffcc96; font-size: 0.333rem; padding-bottom: 0.083rem; }
+
+.item3 .amount span { color: #ffffff; font-size: 0.267rem; }
+
+.year-bill { background-image: url("/static/images/bill3-icon.png"); background-size: cover; height: 5.000rem; margin-top: 1.667rem; }
+
+.item3 .year { padding-top: 1.667rem; }
+
+.item4 { background-image: url("/static/images/bill-bg4.png"); background-size: cover; }
+
+.item4 img { width: 3.500rem; margin-top: 1rem; }
+
+.item4 .computer{background-image: url("/static/images/bill4-icon1.png");background-size: cover;width: 80%;height: 4.333rem;
+    margin: 0.750rem auto 0;position: relative;}
+
+.item4 .earnings, .item4 .invests { display: block; color: #fff; font-size: 0.267rem; background-color: #fd808d; width: 1.267rem;border-radius: 0.700rem; padding: 0.267rem 0; position: absolute; }
+
+.item4 .earnings {top: 0.250rem;right:-0.5rem;}
+
+.item4 .invests { background-color: #f585ff;bottom: -0.5rem; }
+
+.item5 { background-size: contain; background: url("/static/images/bill-bg5.png") repeat-x; }
+
+.item5 img { width: 2.500rem; margin-top: 1rem; }
+
+.item5 ul { -webkit-padding-start: 0; margin-top: 15%; }
+
+.item5 li { list-style: none; background-image: url("/static/images/bill5-icon1.png"); font-size: 0.267em;
+    color: #fff; width: 68%; margin: 0.283rem auto; background-size: cover; text-align: left; padding: 0.133rem 0 0.133rem 0.333rem; }
+
+.item5 li span { color: #7d00fe; margin: 0 0.033rem; font-size: 0.283rem; }
+
+.item5 .chart { background-image: url("/static/images/bill5-icon2.png"); background-size: contain;
+    max-width: 70%; height: 20%; margin: 0.833rem auto 0; }
+
+.item6 { background-image: url("/static/images/bill-bg6.png"); background-size: cover; }
+
+.item6 .leading { background-color: #fff; width: 75%; margin: 1.333rem auto 0; border-radius: 0.200rem; padding: 6% 0; }
+
+.item6 .leading img { width: 90%; margin-bottom: 0.167rem; }
+
+.item6 h1, .item6 h2, .item6 h3 { color: #ff003a; }
+
+.item6 h1 { font-size: 0.467rem; padding-bottom: 0.333rem; }
+
+.item6 h3 { font-size: 0.267rem; }
+
+.item6 h2 { font-size: 0.367rem; padding: 0.083rem 0; }
+
+.item7 { background-image: url("/static/images/bill-bg7.png"); background-size: cover; }
+
+.item7 h2 { font-size: 0.333rem; }
+
+.item7 h1 { font-size: 0.417rem; color: #fee526; margin-top: 0.250rem; }
+
+.item7 h1 span { font-size: 0.333rem; }
+
+.item8 { background-image: url("/static/images/bill-bg8.png"); background-size: cover; }
+
+.item8 .say { color: #fff; font-size: 0.300rem; position: absolute; bottom: 1.333rem; width: 6rem; left: -3rem; margin-left: 50%; }
+
+.item8 .say p { margin: 0.083rem auto; }
+
+.item8 .celling { background-image: url("/static/images/bill8-icon.png"); background-size: cover;
+    width: 80%; height: 4.9rem; margin: 1.417rem auto 0; }
+
+.dialog { position: absolute; z-index: 9999; top: 0; width: 100%; height: 100%; background-color: rgba(49, 49, 49, 0.57); display: none; }
+
+.dialog .content { background: url(/static/images/bill8-dialog.png) repeat-x; background-size: contain; width: 80%; height: 6.833rem; margin: 30% auto 0; border-radius: 0.167rem; }
+
+.dialog h2 { font-size: 0.300rem; padding-top: 0.5rem; }
+
+.dialog h1 { background: url(/static/images/bill8-icon1.png); background-size: cover;
+    font-size: 0.417rem; margin-bottom: 0.5rem; }
+
+.dialog h1 label { color: #ffd200; }
+
+.dialog h3 { font-size: 0.267rem; margin-bottom: 0.167rem; }
+
+.dialog img { width: 1.667rem; margin: 0.5rem auto; }
+
+#pie { width: 100%; height: 50% }

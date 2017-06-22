@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no,email=no"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta name="keywords" content=""/>
+<meta name="description" content="年度账单"/>
+<link rel="shortcut icon" href="/static/images/favicon.ico">
+<link rel="stylesheet" href="/static/css/h5-fullscreen.css">
+<link rel="stylesheet" href="/static/css/animate.css">
+<link rel="stylesheet" href="/static/css/bill.css">
+<title>2016年度账单</title>
+<style type="text/css">
+
+</style>
+<div class="loading-overlay">
+    <img src="static/images/loading.svg">
+</div>
+<div class="fullscreen-page-wrap">
+    <div class="item item1">
+        <div class="tip">宇宙e贷 <i></i> 荣誉出品</div>
+        <div class="register">
+            <h1 id="registerTime" class="animated" data-ani-name="bounceInDown" data-ani-duration="1s"
+                data-ani-delay="0.5s">2016年01月</h1>
+            <h3 class="animated" data-ani-name="bounceInLeft" data-ani-duration="1s" data-ani-delay="1s">
+                您在宇宙e贷注册了账号</h3>
+        </div>
+        <div class="recharge">
+            <h1 id="firstRecharge" class="animated" data-ani-name="bounceInDown" data-ani-duration="1s"
+                data-ani-delay="1.5s">
+                2016年01月01日</h1>
+            <h3 class="animated" data-ani-name="bounceInRight" data-ani-duration="1s" data-ani-delay="2s">您完成了第一次充值</h3>
+        </div>
+        <div class="earnings">
+            <h1 class="animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="2.5s" id="year">
+                1年间</h1>
+            <h3 class="animated" data-ani-name="zoomIn" data-ani-duration="1s" data-ani-delay="3s">您的投资累计收益 <br>达到 <span
+                    id="earnings">0</span>元
+            </h3>
+        </div>
+    </div>
+    <div class="item item2">
+        <img src="static/images/bill2-icon.png" alt="" class="animated" data-ani-name="bounceInDown"
+             data-ani-duration="1s" data-ani-delay="0s">
+        <div class="animated" data-ani-name="lightSpeedIn" data-ani-duration="1s" data-ani-delay="1s">
+            <h1>宇宙e贷</h1>
+            <h1>年度账单</h1>
+        </div>
+        <div class="btn animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="2s">立即开启</div>
+    </div>
+    <div class="item item3" data-desc="年度总收益">
+        <div class="year-bill">
+            <h3 class="year animated" data-ani-name="zoomIn" data-ani-duration="1s" data-ani-delay="0s">2016
+                年</h3>
+            <h1 class="animated" data-ani-name="zoomInRight" data-ani-duration="1.5s" data-ani-delay="1s">我的年度总收益</h1>
+            <h2 class="amount animated" data-ani-name="zoomInLeft" data-ani-duration="1.5s" data-ani-delay="2s"
+                id="yearEarnings">0
+                <span>元</span></h2>
+            <h3 class="invests animated" data-ani-name="zoomInRight" data-ani-duration="1.5s" data-ani-delay="2s">
+                投标<span id="yearInvests">0</span>笔</h3>
+        </div>
+        <div class="say animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="3s"><b>“</b>
+            高档如您，不掩饰豪气，也追求多面 <b>”</b></div>
+    </div>
+    <div class="item item4">
+        <img src="static/images/bill4-icon.png" alt="与2015年相比" class="animated" data-ani-name="bounceInDown"
+             data-ani-duration="1s" data-ani-delay="0s">
+        <div class="computer">
+            <div class="earnings animated" data-ani-name="rotateIn" data-ani-duration="1s" data-ani-delay="2s"
+                 id="comEarnings">收益<br>减少了
+            </div>
+            <div class="invests animated" data-ani-name="rotateIn" data-ani-duration="1s" data-ani-delay="2s"
+                 id="comInvests">投资笔数<br>减少了
+            </div>
+        </div>
+        <div class="say animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="3s" id="lastYearSay"><b>“</b>
+            今年的损失，明年一定努力赚回来，再接再厉! <b>”</b></div>
+    </div>
+    <div class="item item5">
+        <img src="static/images/bill5-icon.png" alt="月投越多" class="animated" data-ani-name="bounceInDown"
+             data-ani-duration="1s" data-ani-delay="0s">
+        <ul>
+            <li class="animated" data-ani-name="fadeInLeft" data-ani-duration="1s" data-ani-delay="1s">
+                <span id="month">无</span>月投标<span id="monthAmount">0</span>元
+            </li>
+            <li class="animated" data-ani-name="fadeInRight" data-ani-duration="1s" data-ani-delay="1s">
+                共计<span id="monthInvests">0</span>笔
+            </li>
+            <li class="animated" data-ani-name="fadeInUp" data-ani-duration="1s" data-ani-delay="1s">
+                产生<span id="monthEarnings">0</span>元收益
+            </li>
+        </ul>
+        <div class="chart "></div>
+        <div class="say animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="2s"><b>“</b>
+            每个月总有那么几天，不投标，就手痒! <b>”</b></div>
+    </div>
+    <div class="item item6">
+        <div class="leading animated" data-ani-name="bounceInDown" data-ani-duration="1s" data-ani-delay="0.5s">
+            <h1 class=" animated" data-ani-name="bounceIn" data-ani-duration="1s" data-ani-delay="1s">恭喜！</h1>
+            <img src="static/images/bill6-icon.png" alt="" class=" animated" data-ani-name="fadeIn"
+                 data-ani-duration="1s" data-ani-delay="1s">
+            <h3 class=" animated" data-ani-name="lightSpeedIn" data-ani-duration="1s" data-ani-delay="1s">您的年度收益超越了</h3>
+            <h2 class=" animated" data-ani-name="lightSpeedIn" data-ani-duration="1s" data-ani-delay="1s" id="leadings">
+                0
+                <span>%</span></h2>
+            <h3 class=" animated" data-ani-name="lightSpeedIn" data-ani-duration="1s" data-ani-delay="1s">宇宙e贷投资人</h3>
+        </div>
+        <div class="say animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="2s"><b>“</b>
+            比去年更厉害了呢，继续保持哦！<b>”</b></div>
+    </div>
+    <div class="item item7">
+        <div id="pie"></div>
+        <h2 class=" animated" data-ani-name="lightSpeedIn" data-ani-duration="1s" data-ani-delay="1s" id="typeName">6个月以上标的投资金额达</h2>
+        <h1 class=" animated" data-ani-name="lightSpeedIn" data-ani-duration="1s" data-ani-delay="1s" id="typeAmount" data="0">0
+            <span>元</span></h1>
+        <div class="say animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="2s"><b>“</b>
+            横看成岭侧成峰，标期长短各不同！<b>”</b></div>
+    </div>
+    <div class="item item8">
+        <div class="celling"></div>
+        <div class="say animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.5s">点击中间圆心
+            <p>测算您的新年运程</p>
+        </div>
+        <div class="dialog">
+            <div class="content">
+                <h2>您的新年运程</h2>
+                <img src="static/images/bill8-icon4.png" alt="">
+                <h1><label>存</label> • 信念</h1>
+                <h3>获得是一种满足</h3>
+                <h3>给予是一种快乐</h3>
+                <h3>不忘初衷，才能走向远方</h3>
+            </div>
+        </div>
+        <div class="dialog">
+            <div class="content">
+                <h2>您的新年运程</h2>
+                <img src="static/images/bill8-icon3.png" alt="">
+                <h1><label>聚</label> • 能量</h1>
+                <h3>既不刻意追求，也不刻意虚饰</h3>
+                <h3>平凡中寻找新可能</h3>
+                <h3>一切，都在意料之中</h3>
+            </div>
+        </div>
+        <div class="dialog">
+            <div class="content">
+                <h2>您的新年运程</h2>
+                <img src="static/images/bill8-icon2.png" alt="">
+                <h1><label>续</label> • 目标</h1>
+                <h3>充满美好的相遇</h3>
+                <h3>更会邂逅机遇</h3>
+                <h3>只要开始就会有新的可能</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="static/js/h5-fullscreen.js" defer async="true"></script>
+<script type="text/javascript" src="static/js/echarts.min.js" defer async="true"></script>
+<script type="text/javascript" src="static/js/bill.js" defer async="true"></script>
+</html>

@@ -1,0 +1,33 @@
+{
+  "bill": {
+    "createTime": "2017-01-23 16:33:12",
+    "earnings": 10000,
+    "firstRecharge": 1500,
+    "firstRechargeStr": "2017年01月",
+    "id": "ea23ccc3-4b8c-4507-a309-8b4c792dda7f",
+    "leadings": 10,
+    "nickname": "小灰灰",
+    "registerTime": "2016-09-28 20:48:02",
+    "registerTimeStr": "2016年09月",
+    "userId": "5ede422c-7773-4052-bb93-fa6fcb7887ea",
+    "userName": "江辉",
+    "year": 1
+  },
+  "code": 200,
+  "compare": {
+    "earnings": "持平了",
+    "invests": "持平了"
+  },
+  "monthBill": {
+    "amount": null,
+    "createTime": null,
+    "id": null,
+    "interest": null,
+    "invests": null,
+    "month": null,
+    "userId": null,
+    "year": null
+  },
+  "typeBills": [],
+  "yearBill": null
+}
