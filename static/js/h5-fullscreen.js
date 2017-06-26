@@ -129,7 +129,7 @@
                  }
              }
          };
-         var dragThreshold = 0.15; //临界值
+         var dragThreshold = 0.1; //临界值
          var dragStart = null;//开始抓取标志位
          var percentage = 0;//拖动量的百分比
          var currentItem;
@@ -213,7 +213,7 @@
                 showSlide(item);
             }
              //重置percentage
-            percentage = 0;
+            // percentage = 0;
 
          }
          function swipeUp(event){

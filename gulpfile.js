@@ -10,15 +10,9 @@ gulp.task('browser-sync', function() {
     ];
     browserSync.init(files,{
         server: {
-            baseDir: "./"
+            baseDir: "../"
         }
     });
 });
 
-// Domain server
-//gulp.task('browser-sync', function() {
-//    browserSync.init({
-//        proxy: "yourlocal.dev"
-//    });
-//});
 gulp.task('default',['browser-sync']); //定义默认任务

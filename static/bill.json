@@ -1,33 +1,57 @@
 {
   "bill": {
-    "createTime": "2017-01-23 16:33:12",
-    "earnings": 10000,
-    "firstRecharge": 1500,
-    "firstRechargeStr": "2017年01月",
-    "id": "ea23ccc3-4b8c-4507-a309-8b4c792dda7f",
-    "leadings": 10,
-    "nickname": "小灰灰",
-    "registerTime": "2016-09-28 20:48:02",
-    "registerTimeStr": "2016年09月",
-    "userId": "5ede422c-7773-4052-bb93-fa6fcb7887ea",
-    "userName": "江辉",
-    "year": 1
+    "createTime": "2017-01-23 16:33:13",
+    "earnings": 1060.98,
+    "firstRecharge": "2014-01-17 15:52:35",
+    "firstRechargeStr": "2014年01月17日",
+    "id": "7616021e-1e52-462a-b3af-93b07e6463cb",
+    "leadings": 8.38,
+    "nickname": "弘阳",
+    "registerTime": "2014-01-17 15:50:59",
+    "registerTimeStr": "2014年01月",
+    "userId": "6fc58f9f-8565-11e6-b902-6c92bf2c1499",
+    "userName": "邵红光",
+    "year": 3
   },
   "code": 200,
   "compare": {
-    "earnings": "持平了",
-    "invests": "持平了"
+    "earnings": "减少了",
+    "invests": "减少了"
   },
   "monthBill": {
-    "amount": null,
-    "createTime": null,
-    "id": null,
-    "interest": null,
-    "invests": null,
-    "month": null,
-    "userId": null,
-    "year": null
+    "amount": 300.00,
+    "createTime": "2017-01-23 16:33:48",
+    "id": "f7c9e761-1856-4e0e-8a12-9ea1baeaae8e",
+    "interest": 12.64,
+    "invests": 3,
+    "month": 4,
+    "userId": "6fc58f9f-8565-11e6-b902-6c92bf2c1499",
+    "year": 2016
   },
-  "typeBills": [],
-  "yearBill": null
+  "typeBills": [
+    {
+      "amount": 50.00,
+      "createTime": "2017-01-23 16:33:46",
+      "id": "93200336-9f28-4155-af49-139d0c047927",
+      "type": 1,
+      "userId": "6fc58f9f-8565-11e6-b902-6c92bf2c1499",
+      "year": 2016
+    },
+    {
+      "amount": 300.00,
+      "createTime": "2017-01-23 16:33:47",
+      "id": "d2631d29-3585-4184-bec6-23052d5b9176",
+      "type": 0,
+      "userId": "6fc58f9f-8565-11e6-b902-6c92bf2c1499",
+      "year": 2016
+    }
+  ],
+  "yearBill": {
+    "createTime": "2017-01-23 16:33:41",
+    "earnings": 13.62,
+    "id": "7c003868-871e-4c5c-a351-88189361b73f",
+    "invests": 4,
+    "userId": "6fc58f9f-8565-11e6-b902-6c92bf2c1499",
+    "year": 2016
+  }
 }

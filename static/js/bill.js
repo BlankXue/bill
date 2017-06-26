@@ -121,7 +121,7 @@ bills.initOther = function () {
     //初始化滚动效果
     fullscreen.init({
         'type': 2, 'useArrow': true,
-        // 'useMusic':{src:"/static/images/bill.mp3"},
+        'useMusic':{src:"static/images/bill.mp3"},
         'pageShow': function (dom) {//页面出现时候
             animation.playAnimation(dom);
             if ($(dom).index() == 6 && myChart == null && parseFloat($("#typeAmount").attr("data")) > 0) {
@@ -149,7 +149,7 @@ bills.initOther = function () {
 };
 $(document).ready(function () {
     //初始化数据
-    $.get("/static/bill.json", function (json) {
+    $.get("static/bill.json", function (json) {
         var bill = json["bill"];
         $("#registerTime").text(bill["registerTimeStr"]);
         if (!!bill["firstRecharge"]) {

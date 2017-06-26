@@ -12,7 +12,7 @@
 
 .fullscreen-page .zindex { z-index: 99 }
 
-.fullscreen-page .arrow { width: 0.333rem; height: 0.333rem; position: absolute; bottom: 0.300em; left: 50%; margin-left: -0.167rem; background-image:url("/static/images/bill-arrow.png");z-index: 999; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); animation: fadeInUp1 1.5s .2s ease infinite; -webkit-animation: fadeInUp1 1.5s .2s infinite;  background-size:contain; }
+.fullscreen-page .arrow { width: 0.333rem; height: 0.333rem; position: absolute; bottom: 0.300em; left: 50%; margin-left: -0.167rem; background-image:url("../../static/images/bill-arrow.png");z-index: 999; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); animation: fadeInUp1 1.5s .2s ease infinite; -webkit-animation: fadeInUp1 1.5s .2s infinite;  background-size:contain; }
 
 .fullscreen-page .parallax.part { transition: all .5s; transition-timing-function: ease-out }
 
