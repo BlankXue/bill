@@ -1,5 +1,5 @@
 var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync').create();//浏览器同步
 
 // Static server
 gulp.task('browser-sync', function() {
